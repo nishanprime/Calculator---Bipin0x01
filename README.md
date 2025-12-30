@@ -16,16 +16,22 @@ A beautifully designed calculator with a retro-inspired UI featuring a custom wi
 
 ### 🔢 Functionality
 - **Basic Arithmetic Operations**: Addition (+), Subtraction (-), Multiplication (×), Division (/)
+- **Decimal Point Support**: Full decimal number calculations with validation
+- **Clear & Backspace**: Clear button (C) and backspace (⌫) for easy editing
+- **Number Formatting**: Large numbers displayed with comma separators for readability
+- **Calculation History**: View last 5 calculations with toggle button (📜)
 - **Real-time Display**: Shows current input and full expression
 - **Continuous Calculations**: Chain multiple operations together
-- **Error Handling**: Prevents division by zero and invalid operations
+- **Enhanced Error Handling**: User-friendly error messages with visual feedback
 - **Smart Input Reset**: Automatically clears after getting a result
 
 ### ⌨️ Keyboard Support
 - **Number Keys** (0-9): Input numbers
+- **Decimal Point** (.): Add decimal point
 - **Operator Keys** (+, -, *, /): Perform operations
 - **Enter/=**: Calculate result
 - **Escape/C**: Clear calculator
+- **Backspace/Delete**: Remove last digit
 
 ### 📱 Dual Implementation
 - **Web Version**: Interactive browser-based calculator (HTML/CSS/JS)
@@ -79,11 +85,15 @@ day1/
 ### Web Calculator
 
 1. **Click Numbers**: Click on number buttons (0-9) to input values
-2. **Select Operator**: Click +, -, ×, or / to choose operation
-3. **Get Result**: Click "Result" button or press Enter to calculate
-4. **Continue Calculation**: After a result, click an operator to continue with that result
-5. **Start Fresh**: After a result, click a number to start a new calculation
-6. **Clear**: Press Escape or C to clear everything
+2. **Decimal Numbers**: Click the "." button to add decimal points
+3. **Select Operator**: Click +, -, ×, or / to choose operation
+4. **Get Result**: Click "=" button or press Enter to calculate
+5. **Clear**: Click "C" button or press Escape/C to clear everything
+6. **Backspace**: Click "⌫" button or press Backspace/Delete to remove last digit
+7. **View History**: Click "📜" button to toggle calculation history
+8. **Continue Calculation**: After a result, click an operator to continue with that result
+9. **Start Fresh**: After a result, click a number to start a new calculation
+10. **Discover Easter Eggs**: Try entering special numbers like 42, 1337, 404, 69, 420, or divide by zero for some tech humor! 🥚
 
 ### Python Calculator
 
@@ -92,6 +102,17 @@ day1/
 3. Enter the second number
 4. View the result
 5. Choose to continue or exit
+
+## 🥚 Easter Eggs & Humor
+
+The calculator includes hidden easter eggs and programming humor:
+
+- **Special Numbers**: Enter numbers like `42`, `1337`, `404`, `69`, `420`, `256`, `1024`, `2048`, `65536`, `2147483647`, and more to see fun messages!
+- **Welcome Messages**: Random welcome messages appear when you first load the calculator
+- **Error Humor**: When you divide by zero, you'll get a random programming joke along with the error
+- **Result Easter Eggs**: Some calculation results trigger special messages too!
+
+Try it out and discover all the hidden gems! 😄
 
 ## 💻 Code Highlights
 
@@ -165,22 +186,31 @@ case '/':
 - **Vanilla JavaScript**: DOM manipulation, Event handling, Calculator logic
 - **Python**: CLI alternative implementation
 
+## ✨ Recent Improvements (PR by Bipin Thapa)
+
+- ✅ **Decimal Point Support**: Full decimal number calculations
+- ✅ **Clear & Backspace Buttons**: Easy editing with dedicated UI buttons
+- ✅ **Number Formatting**: Comma-separated numbers for better readability
+- ✅ **Calculation History**: View and toggle last 5 calculations
+- ✅ **Enhanced Error Handling**: Visual feedback with shake animation
+- ✅ **Improved Keyboard Support**: Backspace/Delete key support
+- ✅ **Better UX**: Fixed initial display, improved button feedback
+- ✅ **Easter Eggs & Tech Humor**: Hidden easter eggs for special numbers (42, 1337, 404, etc.) and programming jokes! 🥚😄
+
 ## 🔮 Future Enhancements
 
-- [ ] Add decimal point support
-- [ ] Implement backspace/delete functionality
 - [ ] Add memory functions (M+, M-, MR, MC)
 - [ ] Include scientific calculator mode
-- [ ] Add calculation history
 - [ ] Implement themes (light/dark mode)
 - [ ] Add parentheses support for complex expressions
 - [ ] Store calculation history in localStorage
+- [ ] Add percentage calculations
+- [ ] Support for keyboard shortcuts (Ctrl+C, etc.)
 
 ## 🐛 Known Issues
 
-- Division operator shows `/` but internally uses `×` for multiplication display
-- No decimal point functionality currently implemented
 - Expression display shows partial expressions during chained calculations
+- History is session-based (not persisted in localStorage)
 
 ## 📝 Learning Outcomes
 
@@ -211,4 +241,4 @@ This project is part of the 30 Days 30 Projects challenge and is open source.
 
 ---
 
-**Day 1 of 30** | *Built with 💖 and ☕*
+**Day 1 of 30** | *Built with 💖 and ☕ TM Bipin0x01 Much Love*
